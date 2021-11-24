@@ -1,3 +1,19 @@
+.sort()
+.reverse()
+.insert(5, 10)
+.remove(10)
+.port(2)
+
+
+Search
+            "dog" in rand_list
+            
+
+Range
+            one_to_ten = our_list(range(1,10))
+
+
+
 Swap
             temp = our_list[j]
             our_list[j] = our_list[j+1]

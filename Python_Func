@@ -1,0 +1,30 @@
+def solve_eq(given_str):
+    given_str = given_str.split()
+    print(given_str)
+    x = given_str[0]
+    num_1 = given_str[2]
+    num_2 = given_str[4]
+    x = int(num_2) - int(num_1)
+    return x
+    #OR x, add, num_1, equal_2 = given_str.split()
+    #num_1, num_2 = int(num_1), int(num_2)
+    #return "x = " + str(num_2 - num_1)
+
+
+print(solve_eq("x + 4 = 99"))
+
+
+
+"""
+
+def change_name():
+    global glb_name
+    glb_name = "Sammy"
+
+
+glb_name = "Sally"
+name = change_name()
+print(glb_name)
+
+"""
+

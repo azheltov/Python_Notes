@@ -1,0 +1,6 @@
+Swap
+            temp = our_list[j]
+            our_list[j] = our_list[j+1]
+            our_list[j+1] = temp
+            
+            

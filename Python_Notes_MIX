@@ -1,3 +1,9 @@
+#Enumerate
+
+for index, char in enumerate("asdfjalsdkf"):
+    print(index, char)
+
+
 """
 
 #Convert to Acronym

@@ -1,0 +1,24 @@
+my_dict = {"f_name" : "John", "l_name" : "Doe", "addr" : "123 Main St."}
+
+print("My name :", my_dict[f_name])
+
+my_dict["addr"] = "215 North St."
+
+my_dict["city"] = "New York"
+
+print("Is there a city :", "city" in my_dict)
+
+print(my_dict.values())
+print(my_dict.keys())
+
+for k, v in my_dict.items():
+  print(k, v)
+  
+print(my_dict.get(f_name")
+
+del my_dict("f_name")
+
+my_dict.clear()
+
+employees = []
+f_name, l_name = input("Enter name").split()

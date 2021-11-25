@@ -3,6 +3,7 @@
 .insert(5, 10)
 .remove(10)
 .port(2)
+.enummerate
 
 
 Search
@@ -28,6 +29,11 @@ Random
 
             for i in num_list:
                 print(i)
+                
+                
+Even List   
+            #(til 10)
+            even_list = [i*2 for i in range (5)]      
                 
 -----------------------------------------------                
 

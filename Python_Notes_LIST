@@ -10,7 +10,7 @@ Search
             
 
 Range
-            one_to_ten = our_list(range(1,10))
+            one_to_ten = list(range(1,10))
 
 
 

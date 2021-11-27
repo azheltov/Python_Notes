@@ -1,6 +1,6 @@
 my_dict = {"f_name" : "John", "l_name" : "Doe", "addr" : "123 Main St."}
 
-print("My name :", my_dict[f_name])
+print("My name :", my_dict["f_name"])
 
 my_dict["addr"] = "215 North St."
 
@@ -37,3 +37,15 @@ while True:
 
 for cust in customers:
     print(cust["f_name"], cust['l_name'])
+    
+ ###################################################################
+john_dict = { "f_name":"John", "l_name":"Doe", "address":"123 Main St"}
+#print(john_dict)
+print("My name is: ", john_dict["f_name"])
+john_dict["address"] = "215 North St"
+print(john_dict["address"])
+john_dict["city"] = "Pittsburgh"
+print("city" in john_dict)
+del john_dict["f_name"]
+for key in john_dict:
+    print(key, john_dict[key])

@@ -1,0 +1,17 @@
+#FIBONACCI
+
+def fibonacci(num):
+    if num == 0:
+        return 0
+    elif num == 1:
+        return 1
+    else:
+        result = fibonacci(num-1) + fibonacci(num-2)
+        return result
+
+
+num_of_nums = int(input("enter your number :"))
+
+while num_of_nums > 1:
+    print(fibonacci(num_of_nums))
+    num_of_nums -= 1

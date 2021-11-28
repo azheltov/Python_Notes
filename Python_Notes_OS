@@ -1,0 +1,18 @@
+import os
+
+with open("mydata.txt", mode="w", encoding="utf-8") as my_file:
+    my_file.write("Some random text\nMore random text\nAnd some more")
+
+with open("mydata.txt", encoding="utf-8") as my_file:
+    print(my_file.read())
+
+print(my_file.closed)
+
+print(my_file.name)
+print(my_file.mode)
+#os.rename("mydata.txt", "mydata.txt")
+#os.remove(mydata.txt)
+os.mkdir("mydir")
+os.chdir("mydir")
+print("Current Directory :", os.getcwd())
+#os.redir("mydir")

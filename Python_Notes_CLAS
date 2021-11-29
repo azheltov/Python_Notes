@@ -1,1 +1,66 @@
+Question 1:
+What function is called each time you create a new object?
+init
 
+Question 2:
+What keyword is used to a class when an object wants to refer to itself?
+self
+
+Question 3:
+How would the object spot call for the bark function to execute?
+self.bark()
+
+Question 4:
+What keyword do we use to define any call to a field will execute a function?
+@property
+
+Question 5:
+What keyword would be used to define height as a setter?
+@hight.setter
+
+
+
+
+
+
+
+
+######################################################################
+
+#Initaization Method
+
+class Dog:
+  def __init__(self, name="", hight=0, weight=0):
+    self.name = name
+    self.hight = hight
+    self.weight = weight
+  
+  def run(self):
+    print("{} the dog runs".format(self.name))
+    
+  def eat(self)
+    print("{} the dog eats".format(self.name))
+  
+  def(bark)
+    print("{} the dog barks".format(self.name))
+    
+def main()
+  spot = Dog("Spot", 66, 26)
+  spot.bark()
+  
+  ##################################################################
+  
+  class Square:
+    def __init__(self, hight="0", width="0"):
+      self.height = hight
+      self.width = width
+      
+    @property
+    def hight(self):
+      print("Retrieving the hight")
+      return self.__height
+      
+    @height.setter
+    def heigh 
+      
+    def main(): 

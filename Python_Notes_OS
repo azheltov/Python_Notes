@@ -1,7 +1,7 @@
 import os
 
-with open("mydata.txt", mode="w", encoding="utf-8") as my_file:
-    my_file.write("Some random text\nMore random text\nAnd some more")
+with open("mydata.txt", mode="w", encoding="utf-8") as my_file:                   # create file                  #mode="w" - writing permission
+    my_file.write("Some random text\nMore random text\nAnd some more")            # \n - new line
 
 with open("mydata.txt", encoding="utf-8") as my_file:
     print(my_file.read())
@@ -16,3 +16,16 @@ os.mkdir("mydir")
 os.chdir("mydir")
 print("Current Directory :", os.getcwd())
 #os.redir("mydir")
+
+#####################################################################################
+Cycle through the lines of text
+#####################################################################################
+
+with open ("mydata2.txt, endcoding="utf-8") as my_file:
+    line_num = 1
+    while True:
+        line = my_file.redline()
+        if not line:
+            break
+        print("Line :", line_num, " : ", line, end="")
+        line_num+=1

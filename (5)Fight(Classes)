@@ -1,0 +1,2 @@
+class Warrior:
+  def __init__(self, name="Warrior", health=0, attk_max=0, block_max

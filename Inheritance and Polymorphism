@@ -1,0 +1,10 @@
+unfinished....
+
+
+@property
+def birth_type(self):
+  return self._birth_type
+  
+@birth_type.setter
+def birth_type(self, birth_type):
+  self._appearance = appearance    

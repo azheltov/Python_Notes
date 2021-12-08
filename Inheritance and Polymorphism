@@ -1,4 +1,27 @@
-unfinished....
+Polymorphism 
+- in Python works differently from other languages
+- will accept any object and will expect that the object will povide a method
+- be Python is dynamically typed
+
+Question 1:
+What decorator is used to define a getter method?
+@property
+
+Question 2:
+How do you define that birth_type is a setter?
+@birth_type.setter
+
+Question 3:
+Method used to cast our object to a string?
+__str__
+
+Question 4:
+How do you define that your Mammal class inherits from Animal?
+Mamal(Animal)
+
+
+
+
 
 
 @property
@@ -7,4 +30,6 @@ def birth_type(self):
   
 @birth_type.setter
 def birth_type(self, birth_type):
-  self._appearance = appearance    
+  self._appearance = appearance
+  
+unfinished....

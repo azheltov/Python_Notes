@@ -1,3 +1,9 @@
+# Lists are Mutable! Can be changed without changing id.
+
+# By The Way Method = Function, but Method has Object!
+
+some_list.append(something)            # add new item to a list
+
 .reverse()
 .insert(5, 10)
 .remove(10)

@@ -1,9 +1,11 @@
-.sort()
 .reverse()
 .insert(5, 10)
 .remove(10)
 .port(2)
-.enummerate
+.enumerate()   # print(list(enumerate(rand_list)))
+.extend()
+.sort()
+.sort(reverse=True)
 
 
 Search
@@ -12,7 +14,6 @@ Search
 
 Range
             one_to_ten = list(range(1,10))
-
 
 
 Swap

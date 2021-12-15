@@ -15,3 +15,17 @@ num_of_nums = int(input("enter your number :"))
 while num_of_nums > 1:
     print(fibonacci(num_of_nums))
     num_of_nums -= 1
+    
+   
+   ################################################################
+   simple recursion 
+   ################################################################
+   
+   def EvenNums (num):
+    print(num)
+    if num == 2:
+        return num
+    else:
+        EvenNums(num -2)
+
+print(EvenNums(8))

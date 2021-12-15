@@ -1,10 +1,18 @@
+OOP
+methods - functions inside the class - (represent functionality and tasks)
+attributes - variables with "self." prefix - (data about the objec "grey", "fast", etc
+objects - variables assigned to classes
+
+
+
+
 Question 1:
 What function is called each time you create a new object?
-init
+__init__
 
 Question 2:
 What keyword is used to a class when an object wants to refer to itself?
-self
+self.
 
 Question 3:
 How would the object spot call for the bark function to execute?

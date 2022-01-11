@@ -1,0 +1,27 @@
+comment 
+  '''
+  ...
+  
+modules:
+  import sys    (provides prewritten code)
+  print(sys.maxsize)
+  
+  import math
+  
+  
+.format
+  num_1 = 1
+  num_2 = 4
+  sum1 = num_1 + num_2
+  print("{} + {} = {}".format(num_1, num_2, sum1))
+  
+miles converter
+  input()   (input method)
+  
+  miles = int(input("Enter miles "))
+  kilometers = miles * 1.60934
+  print("{} miles equals {}".format(miles, kilometers))
+  
+  
+  
+  

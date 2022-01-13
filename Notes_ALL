@@ -2,11 +2,14 @@ comment
   '''
   ...
   
-modules:
+MODULES:
   import sys    (provides prewritten code)
   print(sys.maxsize)
   
   import math
+  
+  import random
+  rand_num = random.randrange(1, 51)
   
   
 .format
@@ -33,7 +36,39 @@ miles converter
   elif operator == "-"
     print("{}+{}={}".format(num_1, num_2, num_1-num_2)
     
+  
  :.2f
+ 
+ -----------------------------------
+ 
+'''Chrismas Tree Exercise'''
+
+    #
+   ###
+  #####
+ #######
+    #
+ 
+ 
+lines = 5
+spaces = 4
+hashes = 1
+base = spaces
+while lines > 1:
+    for i in range(spaces):
+        print(" ", end="")
+    for i in range(hashes):
+        print("#", end="")
+    print()
+    spaces -= 1
+    hashes += 2
+    lines -= 1
+
+for i in range(base):
+    print(" ", end="")
+print("#")
+ 
+------------------------------------------ 
   
     
   

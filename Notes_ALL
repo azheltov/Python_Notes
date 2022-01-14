@@ -102,6 +102,58 @@ while True:
   
   ----------------------------------------------
   
+  What happens when you use the build-in function any() on a list?
+    The any() function returns True if any item in the list evaluates to True. Otherwise, it returns False.
+    
+  What statement about static methods is true?
+    Static methods serve mostly as utility methods or helper methods, since they can't access or modify a class's state.
+  
+  What are attributes?
+    Attributes are a way to hold data or describe a state for a class or an instance of a class.
+    
+  What is the term to describe this code? 
+  count, fruit, price = (2, 'apple', 3.5)
+    tuple unpacking
+    
+   What built-in list method would you use to remove items from a list?
+    .pop() method
+    
+   What is one of the most common use of Python's sys library?
+    to capture command-line arguments given at a file's runtime
+    
+   What is the correct syntax for defining a class called Game, if it inherits from a parent class called LogicGame?
+    class Game(LogicGame): pass
+    
+   What is the correct way to write a doctest?
+    def sum(a, b):
+    """
+    >>> sum(4, 3)
+    7
+
+    >>> sum(-4, 5)
+    1
+    """
+    return a + b
+    
+    
+   
+    
+    
+    
+    
+    
+   
+    
+    
+   
+    
+  
+    
+    
+    
+  
+  
+    
   
   
     

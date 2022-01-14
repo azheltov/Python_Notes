@@ -135,6 +135,48 @@ while True:
     """
     return a + b
     
+  What built-in Python data type is commonly used to represent a stack?
+    list
+    
+  What would this expression return?
+  college_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']
+  return list(enumerate(college_years, 2019))
+    [(2019, 'Freshman'), (2020, 'Sophomore'), (2021, 'Junior'), (2022, 'Senior')]
+    
+  How does defaultdict work?
+    If you try to read from a defaultdict with a nonexistent key, a new default key-value pair will be created for you instead of throwing a KeyError.
+    
+  What is the purpose of the "self" keyword when defining or calling instance methods?
+    self refers to the instance whose method was called.
+    
+  Which of these is NOT a characteristic of namedtuples?
+    No import is needed to use namedtuples because they are available in the standard library.
+    
+  What is an instance method?
+    Instance methods can modify the state of an instance or the state of its parent class.
+    
+  Which statements describes the object-oriented programming concept of encapsulation?
+     It protects the data from outside interference.
+     A parent class is encapsulated and no data from the parent class passes on to the child class.
+     It keeps data and the methods that can manipulate that data in one place.
+     
+   What is the purpose of an if/else statement?
+     It executes one chunk of code if a condition is true, but a different chunk of code if the condition is false.
+     
+   What built-in Python data type is best suited for implementing a queue?
+     list
+  
+   What is the correct syntax for instantiating a new object of the type Game?
+      my_game = Game()
+      
+   What does the built-in map() function do?
+      It applies a function to each item in an iterable and returns the value of that function.
+    
+    
+    
+    
+  
+    
     
    
     

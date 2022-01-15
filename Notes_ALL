@@ -214,12 +214,25 @@ Slicing
   print(number[1::4])
     extracting separators
   -----------------------------------------------------  
+  ***USIFUL***
+  _____________________________________________________
   number = "9,223, 325423;345 345,556"  
   separators = (number[1::4])
   print(separators)
   values = "".join(char if char not in separators else " " for char in number).split()
   print([int(val) for val in values])
   -----------------------------------------------------
+  
+  [::-1] reverse string
+  
+  s = "abcdefghijklmnopqrstuvwxyz"
+  print(s[4::-1])
+  print(s[-1:17:-1])
+  """or"""
+  print(s[:-9:-1])
+  
+  
+  print(s[:1])  only the first letter
   
   
   

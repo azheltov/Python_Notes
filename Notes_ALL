@@ -235,6 +235,41 @@ Slicing
   print(s[:1])  only the first letter
   
   
+  len() - length of a string
+  
+  .lstrip()   - get rid of a white space
+  .rstrip()
+  
+  .capitalize
+  .lower
+  
+DELIMITER
+
+STRING FUNCTIONS
+___________________________________________________________________________
+CONVERT STRING INTO A LIST
+____________________________________________________________________________
+                                               a_list = rand_string.split()
+  
+  
+  rand_string.count("whatever"))
+        output: number of whatever in a string
+        
+  .replace()
+  
+ __________________________________________________________________________
+ end=""  - get rid of new lines
+ __________________________________________________________________________
+  
+  .isalnum
+  .isdigit
+  .islower
+  
+  
+  
+  
+  
+  
   
 
       

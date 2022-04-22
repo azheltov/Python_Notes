@@ -1,0 +1,9 @@
+if __name__ == '__main__':
+    n = int(input())
+    tempN = 0
+    print(tempN)
+    while n > tempN+1:
+        c = tempN + 1
+        print(c * c)
+        tempN += 1
+        

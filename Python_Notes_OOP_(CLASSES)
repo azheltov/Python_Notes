@@ -65,3 +65,22 @@ def main()
     def heigh 
       
     def main(): 
+    
+    
+    
+/////////////////////////////////////////////////////////////////
+
+class BankAccount:		
+	def __init__(self, name, aobunt, interest_rate):	
+		self.name = name
+		self.amount = amount
+		self.inerest_rate = interest_rate
+		
+	def apply_interest(self):	
+		self.amount *= (1 + self.interest_rate / 100)
+		
+account = BankAccount('Juan Bautiste", 1000, 3)		
+account.appy_interest()		
+print(account.amount)		
+account.interest_rate = 2		
+print(account.amount)		

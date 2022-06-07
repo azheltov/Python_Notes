@@ -1,7 +1,7 @@
-OOP
-methods - functions inside the class - (represent functionality and tasks)
-attributes - variables with "self." prefix - (data about the objec "grey", "fast", etc
-objects - variables assigned to classes
+# OOP
+# methods - functions inside the class - (represent functionality and tasks)
+# attributes - variables with "self." prefix - (data about the objec "grey", "fast", etc
+# objects - variables assigned to classes
 
 
 
@@ -84,3 +84,20 @@ account.appy_interest()
 print(account.amount)		
 account.interest_rate = 2		
 print(account.amount)		
+		      
+////////////////////////////////////////////////
+
+class Item:
+	def __init__(self, name, price):
+		self.name = name
+		self.price = price
+		     
+	def __str__(self):                                            # HUMAN READABLE !!!
+		return'{},{:.2f)'.format(self.name, self.price)
+		      
+item = Item('hat', 12.40
+		      
+	def__repr__(self):
+	    	return'{},{:.2f)'.format(self.name, self.price)
+		    
+		

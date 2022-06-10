@@ -23,6 +23,12 @@ if not (num == 0 or num ==2 or num==5 or 10<num<15 or 20<num<25):
 else:
 	print("Not okay")
 	
+
+l = input("Enter prog language: ")
+l = l.lower()
+if l == "python":
+	return "Yes"
 	
-	
-	
+
+# l.replace()
+# x.isalpha()(

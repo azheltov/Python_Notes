@@ -60,4 +60,10 @@ print(a)
 # split is based on " "
 ##
 
+email = 'johndoe@hotmail.com'
+breakpoint = email.index("@")
+print("User name:", email[:breakpoint], "Domain: ", email[breakpoint+1:])
+
+##
+
 

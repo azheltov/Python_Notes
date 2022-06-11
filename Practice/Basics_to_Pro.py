@@ -165,3 +165,13 @@ for i in range(len(c)):
 
 print(t)
 
+##
+
+myList = []
+for i in range(100):
+    myList.append(i ** 2)
+
+print(myList)
+
+list_using_compre = [i**2 for i in range(100)]               # COMPREHENSION
+print(list_using_compre)

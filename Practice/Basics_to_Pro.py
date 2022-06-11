@@ -83,6 +83,18 @@ print(sep.join(ourList))
 
 ##
 
+L = [18,25,30]
+M = [18,2,30]
+myList = []
+for x in range(len(L)):
+	if L[x] > M[x]:
+		myList.append(L[x])
+	else:
+		myList.append(M[x])
+print(myList)
+
+##
+
 
 
 

@@ -102,6 +102,27 @@ for s in range(10):
     studentList.append(x)
 print(studentList)
 
+lucky_index = randint(0,9)
+studentList[lucky_index] = 0
+print(studnetList)
+
 ##
 
+L = ['a','bc','d','e','fg']
+I = [4,2]
 
+for i in range(len(I)):
+    L.pop(I[i])
+
+print(L)
+
+#OR
+
+L = ['a','bc','d','e','fg']
+I = [4,2]
+
+M = []
+for x in range(len(L)):
+	if x not in I:                         # NOT IN
+		M.append(L[x])
+print(M)

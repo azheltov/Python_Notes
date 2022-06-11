@@ -175,3 +175,9 @@ print(myList)
 
 list_using_compre = [i**2 for i in range(100)]               # COMPREHENSION
 print(list_using_compre)
+
+# OR
+
+from math import sqrt
+L=[round(sqrt(i),2) for i in range(100)]                     # ROUND        2 decemal
+print(L)

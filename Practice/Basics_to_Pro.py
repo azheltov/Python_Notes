@@ -95,6 +95,13 @@ print(myList)
 
 ##
 
+from random import randint
+studentList = []
+for s in range(10):
+    x = randint(90,100)
+    studentList.append(x)
+print(studentList)
 
+##
 
 

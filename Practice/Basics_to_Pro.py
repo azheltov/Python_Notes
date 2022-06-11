@@ -65,5 +65,24 @@ breakpoint = email.index("@")
 print("User name:", email[:breakpoint], "Domain: ", email[breakpoint+1:])
 
 ##
+L = blal bla bla numbers
+mx = max(L)
+
+for x in L:
+	if 10 < x < mx:
+		mx = x
+print("Smallest thing grater than 10: ", mx)
+
+##
+#JOIN concaternates STRRINGs
+#JOIN converts list.join(num(list))
+
+ourList = ['1','2','3']
+sep = ','
+print(sep.join(ourList))
+
+##
+
+
 
 

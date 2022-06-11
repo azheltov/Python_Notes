@@ -75,7 +75,7 @@ print("Smallest thing grater than 10: ", mx)
 
 ##
 #JOIN concaternates STRRINGs
-#JOIN converts list.join(num(list))
+#JOIN converts list.join(num(list))         JOIN and SEPARATOR
 
 ourList = ['1','2','3']
 sep = ','

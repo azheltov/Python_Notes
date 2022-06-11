@@ -126,3 +126,42 @@ for x in range(len(L)):
 	if x not in I:                         # NOT IN
 		M.append(L[x])
 print(M)
+
+##
+
+from random import choice
+s = ''
+for i in range(100):
+    s += choice('HT')                         # CHOICE
+print(s)
+
+##
+						# % probability
+letter = 'A'*60 + 'B'*30 + 'C'*8 + 'D'*2
+s = []
+for i in range(1000):
+	s.append(choice(letter))
+
+print(''.join(s))
+
+##
+
+from random import smaple                                  # SAMLE function !!!
+from random import sample
+c = "python"
+indices = []
+
+for i in range(len(c)):
+    indices.append(i)
+
+spots = sample(indices,3)
+t = ''
+
+for i in range(len(c)):
+    if i in spots:
+        t += "*"
+    else:
+        t += c[i]
+
+print(t)
+

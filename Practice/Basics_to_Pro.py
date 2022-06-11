@@ -35,3 +35,29 @@ if l == "python":
 
 # x = 'abc'
 # x.index("b")             - gives index of the char
+
+breakpoint = name.index(' ')
+first = name.[:breakpoint]
+last = name[breakpoint+1:]
+
+###
+#1
+s = 'The weather is so nice'
+print(s[0],end="")
+for i in range(len(s)):
+    if s[i] == " ":
+        print(s[i+1],end="")
+	
+#2
+s = 'The weather is so nice'
+z = s.split()
+a = []
+for i in range(len(z)):
+	a.append(z[i][0])
+
+print(a)
+
+# split is based on " "
+##
+
+

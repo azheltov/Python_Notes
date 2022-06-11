@@ -31,4 +31,7 @@ if l == "python":
 	
 
 # l.replace()
-# x.isalpha()(
+# x.isalpha()
+
+# x = 'abc'
+# x.index("b")             - gives index of the char

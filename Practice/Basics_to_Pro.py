@@ -207,3 +207,18 @@ M = [x[-1] for x in L]
 print(M)
 
 ##
+
+L = 'helloworld'
+k = []
+for char in L:
+    k.append(char)
+s = sorted(k)
+print(s)
+
+##
+
+s = "helloworld"
+L = [s.count(s.count(c) for c in "abcdefghijklmnopqrstuvwxyz"]
+print(L)
+	     
+	     ##

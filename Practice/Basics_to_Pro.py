@@ -191,3 +191,19 @@ print(list_using_compre)
 from math import sqrt
 L=[round(sqrt(i),2) for i in range(100)]                     # ROUND        2 decemal
 print(L)
+
+##
+L = [[1,23],[2,3], [34,78]]
+L1 = []
+for x in range(len(L)):
+    y = L[x]
+   L1.append(y[-1])
+print(L1)
+
+#OR with comprehension
+
+L = [[1,23],[2,3], [34,78]] 
+M = [x[-1] for x in L]
+print(M)
+
+##

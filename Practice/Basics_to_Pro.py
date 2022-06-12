@@ -257,3 +257,20 @@ for i in range(7,9):
 	     
 #   [i * j for j in range(1,11) for i in range(7,9)] - flat output
 #   [[i * j for j in range(1,11)] for i in range(7,9)] - nested list
+	     
+from random import randint
+L = [[randint(0,1) for x in range(10)]for x in range(10)]                 #randint
+print(L)
+	     
+#OR
+	     
+	    
+from random import randint
+arr = []
+for i in range(10):
+    arr.append([])
+    for j in range(10):
+        arr[i].append(randint(0,1))
+
+print(arr) 
+	     

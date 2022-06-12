@@ -292,3 +292,21 @@ else:
 	     
 	     ##
 
+from random import randint
+k =[]
+k = [[randint(0, 2) for i in range(6)]for i in range(6)]
+print(k)
+
+r1 = eval(input("Enter starting row: "))
+r2 = eval(input("Enter ending row: "))
+c1 = eval(input("Enter starting col: "))
+c2 = eval(input("Enter ending col: "))
+
+total = 0
+for i in range(r1, r2+1):
+    for j in range(c1, c2+1):
+        total += k[i][j]
+
+print(total)
+	     
+	     ##

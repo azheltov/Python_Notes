@@ -273,4 +273,22 @@ for i in range(10):
         arr[i].append(randint(0,1))
 
 print(arr) 
+
+	     ##                                                 BATTLESHIP
+from random import randint
+arr = []
+for i in range(10):
+    arr.append([])
+    for j in range(10):
+        arr[i].append(randint(0,1))
+
+r = int(input("Enter two row from 0 to 9: "))
+c = int(input("Enter colomn number from 0 - 9: "))
+
+if arr[r][c] == 0:
+    print("Missed")
+else:
+    print("Hit")
 	     
+	     ##
+

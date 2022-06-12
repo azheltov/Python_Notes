@@ -222,3 +222,38 @@ L = [s.count(s.count(c) for c in "abcdefghijklmnopqrstuvwxyz"]
 print(L)
 	     
 	     ##
+string1 = "python?"
+string2 = "Python!"
+L = []
+for x in range(len(string1)):
+    if string1[x] != string2[x]:
+        print("yes",x)
+        L.append(x)
+print(L)
+	     
+#comprehesion 
+#k = [L.append(x) for x in range(len(string1)) if string1[x] != string2[x]]
+#print(L)
+	     
+	     #OR just
+	     #L = [x for x in range(len(string1)) if string1[x] != string2[x]]
+	     #print(L)
+	     
+nested_list = [[1,2,3],[4,5,6],[7,8,9]]
+print(nested_list[1][2])
+for l in nested_list:
+    for val in l:
+        print(val,end='')
+
+#comprehension
+k = [l for l in nested_list]
+print(k)
+
+                                        # new line (don forget!)  \n
+
+for i in range(7,9):
+    for j in range(1,11):
+        print(f'{i}*{j}={i*j}')         # print with       f'{}'
+	     
+#   [i * j for j in range(1,11) for i in range(7,9)] - flat output
+#   [[i * j for j in range(1,11)] for i in range(7,9)] - nested list

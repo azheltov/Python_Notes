@@ -85,6 +85,16 @@ print(sep.join(ourList))
 
 L = [18,25,30]
 M = [18,2,30]
+
+##
+
+L = eval(input("Enter a list of integer: "))                             # create an input list 
+M = [x+1 for x in L if x%2 == 0]                                         # comprehesion 1) loop 2) if 3) begging
+print(M)
+
+##
+
+
 myList = []
 for x in range(len(L)):
 	if L[x] > M[x]:

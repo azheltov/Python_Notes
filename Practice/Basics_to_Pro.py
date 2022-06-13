@@ -310,3 +310,41 @@ for i in range(r1, r2+1):
 print(total)
 	     
 	     ##
+# 6 x 6 list of integers from 0 to 5
+# if there are two consecutive zeros in the list
+# horizontally or vertically
+
+
+from random import randint
+k =[]
+#k = [[randint(0, 5) for i in range(6)]for i in range(6)]
+#print(k)
+
+
+for i in range(6):
+    k.append([])
+
+    for j in range(6):
+        k[i].append(randint(0, 5))
+    print(k[i],end='\n')
+
+# horizontally
+flag = False
+for i in range(len(k)):
+    for j in range(len(k[i])):
+        if k[i][j]==k[i-1][j]==0:
+            flag = True
+
+
+# vertically
+for i in range(len(k)):
+    for j in range(len(k[i])):
+        if k[i][j-1] == k[i][j] == 0:
+            flag = True
+
+if flag:
+    print("There are consecutive zeros!")
+else:
+    print("None!")
+	     
+	     ###

@@ -348,3 +348,15 @@ else:
     print("None!")
 	     
 	     ###
+		#bulds up a list
+	        #by adding random numbers 1-10 to the list
+	        #stopping whenn the fifth 10
+	     
+from random import randint
+count = 0
+L = []
+while count < 5:
+    L.append((randint(1,10)))
+    
+    if L[-1] == 10:
+        count += 1

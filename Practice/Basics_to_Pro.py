@@ -363,5 +363,25 @@ while count < 5:
 	     
 	     ###
 	     
+#couple havign kids until boy
+#percentage of boys and girls?
+#random outcome for a couple (B or G)
+#range of 10000 couples
+
+
+from random import choice
+
+boys = 0
+girls = 0
+
+for i in range(10000):
+    child = choice("BG")
+    while child == "G":
+        girls += 1
+        child = choice("BG")
+    boys += 1
+
+print("Boys", 100 * boys /(boys + girls), "Girls", 100 * girls / (boys + girls))
 	     
+	     ###
 	     

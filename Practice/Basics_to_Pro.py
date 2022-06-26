@@ -396,7 +396,7 @@ T = [i for i in range(1,101)]
 C = []
 n = 0
 while len(C) != 100:
-    P = sample(T,20)                #SAMPLE FUNCTION
+    P = sample(T,20)                                                     #SAMPLE FUNCTION
     for x in P:
         if x not in C:
             C.append(x)
@@ -405,7 +405,24 @@ print(n)
 	     
 ###
 	     
-	     
-	     
-	     ###
+# net amount of bank account -
+# transaction log is two vars: D and amount, W and amount, " " for exit
+# console input
+total = 0
+while True:
+    s = input().split()                                                  #INPUT + SPLIT           split function
+    if not s:
+        break
+    cm, num = map(str, s)                                                 # MAP function
+
+    if cm == "D":
+        total += int(num)
+    if cm == "W":
+        total -= int(num)
+
+print(total)
+
+
+#    x = ['1','2','3','4']
+#    map(int, x)                       # int - it's a function here, x - list
 	     

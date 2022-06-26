@@ -383,5 +383,29 @@ for i in range(10000):
 
 print("Boys", 100 * boys /(boys + girls), "Girls", 100 * girls / (boys + girls))
 	     
+	     
+###
+	     # set of 100 items
+# 20 items per package are different
+# HOW long until collect all 100
+# randmly generating packages of 20 and adding them to a collection until the collection has all 100 items
+
+
+from random import sample
+T = [i for i in range(1,101)]
+C = []
+n = 0
+while len(C) != 100:
+    P = sample(T,20)                #SAMPLE FUNCTION
+    for x in P:
+        if x not in C:
+            C.append(x)
+    n += 1
+print(n)
+	     
+###
+	     
+	     
+	     
 	     ###
 	     

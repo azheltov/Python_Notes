@@ -441,4 +441,17 @@ print(total)
 
 #    x = ['1','2','3','4']
 #    map(int, x)                       # int - it's a function here, x - list
-	     
+
+inpStr = str(input("Enter course code: "))
+
+result = inpStr.find(" ")
+print(result)
+
+if int(inpStr[result:]) < 100 or int(inpStr[result:]) > 499:
+    print("Error")
+else:
+    print("Thanks")
+
+### OR ###
+
+#int(inpStr.split()[1])

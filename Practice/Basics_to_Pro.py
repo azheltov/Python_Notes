@@ -455,3 +455,14 @@ else:
 ### OR ###
 
 #int(inpStr.split()[1])
+	     
+s = input("enter nums separated by semicolon: ")
+total = 0
+for i in s.split(":"):
+    total += int(i)
+
+print(total)
+	     
+	     ###
+	     
+	     

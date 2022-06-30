@@ -466,3 +466,28 @@ print(total)
 	     ###
 	     
 	     
+	     ### zip function                                               DICTIONARIES
+	     keys = ['x','y','z']
+	     values = [1, 2, 5]
+	     simpDict = dict(zip(keys, values))
+	     
+	     #unzip
+	     result = list(zip(keys, values))
+	     
+	     keys, values = zip(*result)                                     ### * STAR
+	     
+	     
+	     
+	     
+str = ['abc', 'bds', 'adsfasdf']
+val = [7, 11, 13]
+	     
+dick = dict(zip(str, val))
+print(dick)
+print(dick['bds'])	     
+	     
+	     
+	     
+	     
+	     
+	     

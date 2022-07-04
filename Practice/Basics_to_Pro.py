@@ -484,10 +484,35 @@ val = [7, 11, 13]
 	     
 dick = dict(zip(str, val))
 print(dick)
-print(dick['bds'])	     
+print(dick['bds'])
+	     
+	     dick.keys()                                 #keys
+	     list(dick.keys())
+	     
+	     for k in dick:
+	     	print(k,dick[k])
+	     
+	     if 'abc' in dick:
+	     	print('yes')
+	     else:
+	     	print('no')
+	     
+	     dick.values()                                 #values
+	     
+###	     
+	     
+dict1 = { }
+dict2 = { }
+dict3 = {**dict1,**dict2}
+	     
+	     
+	     result = 0
+	     for i in dict3:
+	     	result += dict3[i]
+	     print(result)
 	     
 	     
 	     
-	     
+###
 	     
 	     

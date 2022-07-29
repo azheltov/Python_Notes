@@ -556,3 +556,9 @@ d = {k:v*2 for k,v in dict1.items()}                                    #dict co
 print(d)
 	     
 	     ###
+	     
+	     new_dict = {n:n**2 for n in range(10) if n%2 == 0}
+	     
+	     ###
+	     
+	     

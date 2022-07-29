@@ -541,6 +541,18 @@ print(sampleDict)
 sampleDict['emp3']['salary'] = 8999
 print(sampleDict)  
 	     
+print('emp2' in sampleDict.keys())
+	     
 	     ###
 	     
+dict1 = {'a':1, "b":2, "c":3, "d":4, "e":5}
+
+d = {}
+for k,v in dict1.items():
+    d[k] = v*2
+print(d)
 	     
+d = {k:v*2 for k,v in dict1.items()}                                    #dict comprehension
+print(d)
+	     
+	     ###

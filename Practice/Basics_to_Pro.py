@@ -515,4 +515,32 @@ dict3 = {**dict1,**dict2}
 	     
 ###
 	     
+sampleDict = {	     
+	'Physics1' : 82,
+	'Math1' : 65,
+	'History1' : 75
+}
+sampleDict.get("Math1")                                                       # GET
+	     
+mx = min(sampleDict)
+mx
+	     
+for i in sampleDict:
+	if sampleDict[i]>66:
+	     sampleDict.get(i) +  sampleDict[mx]                            # i - is a key
+	     
+###
+	     
+sampleDict = {
+'emp1' : {'name' : "John", 'salary' : 7500},
+'emp2' : {'name' : "Emma", 'salary' : 8000},
+'emp3' : {'name' : "Brad", 'salary' : 6500}
+}
+
+print(sampleDict)
+sampleDict['emp3']['salary'] = 8999
+print(sampleDict)  
+	     
+	     ###
+	     
 	     

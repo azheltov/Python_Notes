@@ -562,3 +562,16 @@ print(d)
 	     ###
 	     
 	     
+dictTemp = {'t1':-30, "t2":-20, "t3":-10, "t4":0}
+
+Celcius = {}
+for k,v in dictTemp.items():
+    Celcius[k] = ((v-32)*5)/9
+print(Celcius)
+
+Celcius = {k:((v-32)*5)/9 for k,v in dictTemp.items()}
+print(Celcius)
+	     
+	     ###
+	     
+	     

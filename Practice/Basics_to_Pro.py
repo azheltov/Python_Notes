@@ -574,4 +574,40 @@ print(Celcius)
 	     
 	     ###
 	     
+dictTemp = {'t1':-30, "t2":-20, "t3":-10, "t4":0}
+
+bla = {k:v for k,v in dictTemp.items() if v > -20}
+print(bla)
+	     
+	     ###
+	     
+#repeatedly ask the user to enter a word
+#key:words, valuse: count of vowels
+#" " for break
+#print dictionary as output
+words = {}
+vowels = ['a', 'e', 'i', 'o', 'u']
+while True:
+    word = input('Enter a word : ')
+    if word ==' ':
+        break
+    else:
+        words[word] = word
+
+        counter = 0
+        for i in range(len(word)):
+            #print(word[i])
+            if word[i] in vowels:
+                counter += 1
+                #print(counter)
+
+        words[word] = counter
+
+    print(words)
+
+
+    # OR
+    # words[word] = sum(word.count(c) for c in "aeiou")
+	     
+###
 	     

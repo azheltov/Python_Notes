@@ -26,3 +26,27 @@ def rand_lower_string(n):
   return ' '.join(choice('ABCDEFGHIJKLMNOPQRSTUVWXYZ') for i in range(n))
 
 ###
+
+def daily_blogs(*args):                    #args can be replaced with blog_1, blog_2, blog_3
+  for post in args:
+    print(post)
+    
+###
+
+def my_sum(*args):
+  sum = 0
+  for x in args:
+    sum+=n
+  return result
+
+my_sum(1,2,5,6,7)
+
+###
+
+def concatenates(**kwargs)                                #kwargs  - for dictionaries
+  for values in kwargs.values():
+    print value end=' '                  ### OR result = '' and then in the loop result+=values and then print result
+    
+###
+  
+    

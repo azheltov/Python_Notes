@@ -20,4 +20,9 @@ def rand_lower_string(n):
     s += choice("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
   return s
 
+### OR
+
+def rand_lower_string(n):
+  return ' '.join(choice('ABCDEFGHIJKLMNOPQRSTUVWXYZ') for i in range(n))
+
 ###

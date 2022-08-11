@@ -32,6 +32,22 @@ def daily_blogs(*args):                    #args can be replaced with blog_1, bl
     print(post)
     
 ###
+###OOP
+###
+
+class item:
+    def __init__(self,name, price):
+        self.name = name
+        self.price = price
+    def __str__(self):                                                  #### __str__ for human-readable OR def __repr__
+        return '{},{:.2f}'.format(self.name, self.price)                #### {:.2f} decimal
+
+item = item('hat', 12.40)
+print(item)
+
+###
+
+
 
 def my_sum(*args):
   sum = 0

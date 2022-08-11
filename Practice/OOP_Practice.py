@@ -147,3 +147,32 @@ def print_2d(lst):
 
 L = [[1,2,3],[4,5,6],[7,8,9]]
 print(print_2d(L))
+
+###
+
+class Ticket:
+    def __init__(self, cost, time):
+        self.cost = cost
+        self.time = time
+
+    def __str__(self):
+        return "Ticket cost ("+str(self.cost) + ',' + str(self.time) + ")"
+
+    def is_evening_time(self):
+        hour = int(self.time.split(':')[0])
+        return 18<=hour<=23
+
+    def bulk_discount(self,n):
+        if 5<=n<9:
+            return 10
+        elif n>=10:
+            return 20
+        else:
+            return 0
+
+ticket = Ticket(49.99,"19:00")
+print(ticket)
+print(ticket.is_evening_time())
+print(ticket.bulk_discount(15))
+
+###

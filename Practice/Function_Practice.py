@@ -119,3 +119,15 @@ def union(lst1,lst2):
 x = [1,1,2,3,8]
 y = [2,3,3,6,10]
 print(union(x,y))
+
+###
+
+def print_2d(lst):
+    for i in range(len(lst)):
+        for j in range(len(lst[i])):
+            print(lst[i][j],end = " ")
+        print()
+
+
+L = [[1,2,3],[4,5,6],[7,8,9]]
+print(print_2d(L))

@@ -108,3 +108,14 @@ print(changes_by_one(x))
 
 ###
 
+def union(lst1,lst2):
+    lst3 = lst1 + lst2
+    #lst3 = sorted(lst3)
+    #print(lst3)
+    lst3 = set(lst3)
+    return lst3
+
+
+x = [1,1,2,3,8]
+y = [2,3,3,6,10]
+print(union(x,y))

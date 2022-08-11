@@ -90,5 +90,21 @@ vow = ['A','E','I','O','U']
 print(list(filter(lambda x : x in vow, alpha)))
 
 ###
+def changes_by_one(lst):
+    ind = []
+    for i in range(len(lst)-1):
+        if lst[i+1] - lst[i] == 1:
+            ind.append(i+1)
 
+    return ind
+
+    #OR
+    #return [ind.append(i+1) for i in range(len(lst)-1) if lst[i+1] - lst[i] == 1]
+    #OR
+    #return [i for i in range(1,len(lst)) if lst[i]==lst[i-1]+1]
+
+x = [1,2,5,5,10,11,12,15,16]
+print(changes_by_one(x))
+
+###
 

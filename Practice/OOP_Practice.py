@@ -176,3 +176,55 @@ print(ticket.is_evening_time())
 print(ticket.bulk_discount(15))
 
 ###
+
+class Ticket:                                                 #PARENT CLASS
+    def __init__(self, cost, time):
+        self.cost = cost
+        self.time = time
+
+    def __str__(self):
+        return "Ticket cost ("+str(self.cost) + ',' + str(self.time) + ")"
+
+    def is_evening_time(self):
+        hour = int(self.time.split(':')[0])
+        return 18<=hour<=23
+
+    def bulk_discount(self,n):
+        if 5<=n<9:
+            return 10
+        elif n>=10:
+            return 20
+        else:
+            return 0
+
+ticket = Ticket(49.99,"19:00")
+print(ticket)
+print(ticket.is_evening_time())
+print(ticket.bulk_discount(15))
+
+
+class MovieTicket(Ticket):                                        #CHILD CLASS
+    def __init__(self,cost,time,movie_name):
+        self.cost = cost
+        self.time = time
+        self.movie_name = movie_name
+    def __str__(self):
+        return "Ticket ("+str(self.cost)+','+str(self.time)+','+str(self.movie_name)
+    def afternoon_discount(self):
+        hour = int(self.time.split(':')[0])
+        if 12<=hour<=17:
+            return 10
+        else:
+            return 0
+
+m_ticket = MovieTicket(49.99, "14:25", "Snakes on a Plane")
+print(m_ticket)
+print(m_ticket.afternoon_discount())
+print(m_ticket.is_evening_time())
+
+###
+#avoid repetition
+Ticket.__init__(self,cost,time)
+
+#super method
+super().__init__(cost,time)                                         #no need for SELF

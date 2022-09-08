@@ -228,3 +228,75 @@ Ticket.__init__(self,cost,time)
 
 #super method
 super().__init__(cost,time)                                         #no need for SELF
+
+###
+
+class Course:
+    def __init__(self, name, capacity):
+        self.name = name
+        self.capacity = capacity
+        self.students_IDs = []
+
+    def is_full(self):
+        return len(self.students_IDs) > self.capacity
+
+    def add_student(self, x):
+        #2 conditions
+        if not self.is_full() and x not in self.students_IDs:
+            self.students_IDs.append(x)
+
+course = Course("CompScie",3)
+course.add_student("123")
+course.add_student("123")
+course.add_student("456")
+course.add_student("789")
+course.add_student("999")
+print(course.is_full())
+print(course.students_IDs)
+
+###
+
+class Rectangle:
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
+
+    def compute_area(self, length, width):
+        return length * width
+
+
+rectangle = Rectangle(3,2)
+print(rectangle.compute_area(3,2))
+
+###
+
+class NumberToRoman:
+    def roman_symbol(self,user_num):
+        val = [
+            1000, 900, 500, 400,
+            100, 90, 50, 40,
+            10, 9, 5, 4,
+            1
+        ]
+
+        syb = [
+            'M', 'CM', 'D', 'CD',
+            'C', 'XC', 'L', 'XL',
+            'X', 'IX', 'V', 'IV',
+            'I'
+        ]
+
+        i = 0
+        roman_num = ''
+
+        while user_num > 0:
+            for _ in range(user_num//val[i]):
+                roman_num+=syb[i]
+                user_num-=val[i]
+            i+=i
+        return roman_num
+
+
+
+
+print(NumberToRoman().roman_symbol(2549))

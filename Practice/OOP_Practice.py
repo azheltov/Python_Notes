@@ -300,3 +300,69 @@ class NumberToRoman:
 
 
 print(NumberToRoman().roman_symbol(2549))
+
+###
+
+class Person:                                     #class
+    def __init__(self,name, age):                 #attributes
+        self.name = name
+        self.age = age
+                                                   #method
+    def display(self):
+        print("Person name: ", self.name)
+        print("Person age: ", self.age)
+
+
+class Student(Person):                              #child class with inheritance
+    def __init__(self,name,age,section):             #must be same paramiters from the parent class
+        Person.__init__(self,name,age)
+        self.section = section
+
+    def displayStudent(self):
+        print("Person name: ", self.name)
+        print("Person age: ", self.age)
+        print(("Person section: ", self.section))
+
+P = Person("Tomas Wild", 37)
+P.display()
+
+S = Student("Albert", 23, "Math")
+S.displayStudent()
+
+###
+
+class BankAccount:
+    def __init__(self,accountNumber, name, balance):
+        self.accountNumber = accountNumber
+        self.name = name
+        self.balance = balance
+
+    #create constructor
+    #create methods below
+
+    def Deposit(self,depositAmount,):
+        self.balance = self.balance + depositAmount
+
+    def Withdrawal(self,withdrawalAbount):
+        if self.balance < withdrawalAbount:
+            print("Insufficent funds")
+        else:
+            self.balance = self.balance - withdrawalAbount
+
+    def bankFees(self):
+        self.balance = self.balance - 0.05 * self.balance
+
+
+    def display(self):
+        print('Acount Nubmer: ', self.accountNumber)
+        print("Account Name: ", self.name)
+        print("Account Balance: ", self.balance)
+
+newAccount = BankAccount(272349078093248, "Albert", 3000)
+newAccount.display()
+print('-----------')
+newAccount.Withdrawal(100)
+newAccount.display()
+
+###
+

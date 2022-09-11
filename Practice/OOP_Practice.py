@@ -366,3 +366,37 @@ newAccount.display()
 
 ###
 
+from random import randint,sample
+
+class Avatar:
+    def __init__(self, name, hit_points, attack_power, defense_power):
+        self.name = name
+        self.hit_points = hit_points
+        self.attack_power = attack_power
+        self.defense_power = defense_power
+
+    def attack(self):
+        return randint(1,self.attack_power)
+
+
+    def defend(self,attack_amount):
+        damage_taken = max(attack_amount - self.damage_power, 0)
+        self.hit_points -= damage_taken
+        return damage_taken
+
+    def is_alive(self):
+        if self.hit_points < 0:
+            return False
+        else:
+            return True
+
+
+
+L = [Avatar('Ogre', 40, 30, 3), Avatar("Warrior", 100, 20, 5), Avatar("Paladin", 80, 10, 8)]
+attacker, defender = sample(L,2)
+print(attacker.name)
+print(defender.name)
+attack_amount = attacker.attack()
+damage_amount = defender.defend(attack_amount)
+print(attacker.name, "attacks!")
+print(defender.name, "takes", damage_amount, "damage")

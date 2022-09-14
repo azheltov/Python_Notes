@@ -1,5 +1,6 @@
 #quadratic complexity
 
+"""
 class Solution(object):
     def twoSum(self, nums, target):
 
@@ -12,6 +13,8 @@ class Solution(object):
                 if (value1 + value2 == target):
                     print("bingo!", target, "=", value1, "+", value2)  
                     return(count1, count2 + count1 + 1)
+                    
+"""
                     
 #proper solution
 

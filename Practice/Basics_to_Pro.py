@@ -617,4 +617,17 @@ while True:
 	     
 ###
 
+from random import randint
+h = []
+for i in range(100):
+    h.append(randint(0, 1))
+print(h)
+for i in range(len(h)):
+    if h[i] == 0:
+        print("?", end='')
+    else:
+        print("*", end='')
+
+###
+	     
 	     

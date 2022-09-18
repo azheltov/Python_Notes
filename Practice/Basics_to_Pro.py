@@ -124,6 +124,14 @@ print(studnetList)
 
 ##
 
+for i in range(200):
+    if i%10 != 8:
+        print("file",i,".jpg")
+    else:
+        continue
+
+##
+
 L = ['a','bc','d','e','fg']
 I = [4,2]
 

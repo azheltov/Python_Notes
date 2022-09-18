@@ -60,6 +60,12 @@ print(a)
 # split is based on " "
 ##
 
+val = int(input("Please enter a number: "))
+print(type(val))
+print(val//2)
+
+##
+
 email = 'johndoe@hotmail.com'
 breakpoint = email.index("@")
 print("User name:", email[:breakpoint], "Domain: ", email[breakpoint+1:])

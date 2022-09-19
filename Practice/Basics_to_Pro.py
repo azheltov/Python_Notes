@@ -688,4 +688,7 @@ print(answer*100,"%" )
 	     
 ###
 	     
-
+p = [2,3,4,6,7,8,9]
+l = [str(choice(p)) +'x'  + str(choice(p) for i in range(20)]
+				
+###

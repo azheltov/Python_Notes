@@ -645,3 +645,30 @@ for x in range(1,101):
         print("Bingo! ", x)
 	     
 ###
+	     
+from random import randint
+
+num1 = randint(20,50)
+num2 = randint(20,50)
+num3 = randint(20,50)
+
+
+for i in range(10):
+    num1 = randint(20, 50)
+    num2 = randint(20, 50)
+    num3 = randint(20, 50)
+    problem = num1 + num2 + num3
+    print(num1,"+", num2,"+", num3, "= ?")
+
+    for x in range(5):
+        answer = eval(input("Please provide your answer: "))
+        if answer == problem:
+            print("Right!")
+        elif answer <= problem + 5 and answer >= problem - 5:
+            print("Close!")
+        else:
+            print("Wrong")
+	     
+###
+	     
+	     

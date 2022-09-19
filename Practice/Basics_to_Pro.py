@@ -671,4 +671,21 @@ for i in range(10):
 	     
 ###
 	     
+counter = 0
+for i in range(10000):
+     fiveDice = []
+     for d in range(5):
+          dice = randint(1, 6)
+          fiveDice.append(dice)
+          #print(fiveDice)
+
+     if len(set(fiveDice)) == 1:
+          print(fiveDice)
+          counter+=1
+
+answer = counter*100/10000
+print(answer*100,"%" )
 	     
+###
+	     
+

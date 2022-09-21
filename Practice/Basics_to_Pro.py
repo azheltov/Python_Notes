@@ -33,6 +33,31 @@ if l == "python":
 # l.replace()
 # x.isalpha()
 
+
+### matrix  [r] [c]
+arr = [[0 for i in range(4)] for i in range(4)]                 #empty matrix
+for i in range(4): #rows
+	for j in range(4): #columns
+		arr[i][j] = x
+		x += 1
+		
+sum = 0
+for i in range (4):
+	for j in range(4):
+		sum += arr[j][i]
+print("Sum of the column")
+
+
+
+
+###
+		
+		
+		
+		
+		
+
+
 # x = 'abc'
 # x.index("b")             - gives index of the char
 

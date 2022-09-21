@@ -717,3 +717,16 @@ p = [2,3,4,6,7,8,9]
 l = [str(choice(p)) +'x'  + str(choice(p) for i in range(20)]
 				
 ###
+				
+d = {"question":"answer", "question":"answer"}
+				
+from random import shaffle
+keys = list(d.keys())
+shuffle(keys)
+				
+for k in keys:
+	guess = input(k+ " ")
+	if guess.lower() = d[k].lower():
+		print("Right")
+	else:
+		print("Wrong")

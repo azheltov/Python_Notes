@@ -1,3 +1,2 @@
-    arr.sort()
-    median = len(arr)+1//2
-    return median
+    import statistics
+    return statistics.median(arr)

@@ -730,3 +730,26 @@ for k in keys:
 		print("Right")
 	else:
 		print("Wrong")
+
+###
+				
+def reverse_only_letters(s):
+	#l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+	l,r = 0,len(s)
+	s = list(s)
+	while l>r:
+		while not s[l].isalpha() and l<r:
+			l+=1
+		while not s[r].isalpha() and l<r:
+			r-=1
+		s[l],s[r] = s[r],s[l]
+		l+=1
+		r-=1
+
+	print(s)
+
+
+
+
+reverse_only_letters("ab*c&&de")

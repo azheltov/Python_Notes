@@ -1,0 +1,78 @@
+ROADMAP:
+
+* variables - done
+* conditions - done
+* chained conditionals - done
+* operators
+* control flow (if/else) - done
+* loops and iterables - done
+* basic data structure - done
+* functions - done
+* mutable - [list], {dict:val}, {set}                          mutability NOT-TRANSITIVE stops at the 1st level
+* immutable -"string" , (tuple, 2), frozenset([1,2,3])
+* common methods - done
+* file IO - done
+  - open("input.txt", 'a'
+  file = open("input.txt", 'w')
+  file.write
+  file.read().split('\n')
+  file.close
+  book1_data = data[0].split('\t')
+                
+                
+                use f strings
+                  print(f"wow{name}! you have {subscribers} subscriber!")
+                
+                use comprehensions
+                
+                use is comparison
+                  if x is True:
+                    pass
+                    
+                loop through elements, not indices
+                  for v in a:
+                    ...
+                    
+                  for range use 
+                    for i,v in enumerate(a):
+                    
+                  for i, (av, bv) in enumerate(zip(a,b)):
+                  
+                  the dictionary thing
+                    for key, val in d.items():
+                    
+                  tuple unpacking
+                  
+                  perf_counter
+                  
+                  numpy
+                  pandas
+                    
+
+*****interm:
+* lambda functions - done
+        add = lambda a,b:a+b
+        mult = lambda a,b:a*B
+        lambda(10,7)
+        #70
+        sqr = lambda num:num*num
+* collecitons module
+* map and filter
+* *args and **kwargs - done
+* Module Creation - PIP
+* Environments (anaconda)
+* Asinc IQ
+
+
+advanced:
+decorators
+generators (memory utilization)
+with (context managements)
+concurency - multithredding
+testing (piplines)
+cython (!)
+
+expert:
+
+
+

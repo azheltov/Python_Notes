@@ -1,0 +1,51 @@
+my_dict = {"f_name" : "John", "l_name" : "Doe", "addr" : "123 Main St."}
+
+print("My name :", my_dict["f_name"])
+
+my_dict["addr"] = "215 North St."
+
+my_dict["city"] = "New York"
+
+print("Is there a city :", "city" in my_dict)
+
+print(my_dict.values())
+print(my_dict.keys())
+
+for k, v in my_dict.items():
+  print(k, v)
+  
+print(my_dict.get(f_name")
+
+del my_dict("f_name")
+
+my_dict.clear()
+
+employees = []
+f_name, l_name = input("Enter name").split()
+
+####################################################################
+
+customers = []
+while True:
+    create_entry = input("Enter Customer (Yes?No) :")
+    create_entry = create_entry[0].lower()
+    if create_entry == "n":
+        break
+    else:
+        f_name, l_name = input("Enter Customer name: ").split()
+        customers.append({ "f_name": f_name, "l_name": l_name })
+
+for cust in customers:
+    print(cust["f_name"], cust['l_name'])
+    
+ ###################################################################
+john_dict = { "f_name":"John", "l_name":"Doe", "address":"123 Main St"}
+#print(john_dict)
+print("My name is: ", john_dict["f_name"])
+john_dict["address"] = "215 North St"
+print(john_dict["address"])
+john_dict["city"] = "Pittsburgh"
+print("city" in john_dict)
+del john_dict["f_name"]
+for key in john_dict:
+    print(key, john_dict[key])

@@ -1,0 +1,11 @@
+numeric
+  int
+  float
+  complex
+  long (Python 2)
+iterator
+sequence (also iterators)
+mapping
+file
+class
+exception

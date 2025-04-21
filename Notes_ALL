@@ -264,10 +264,27 @@ ____________________________________________________________________________
   .isalnum
   .isdigit
   .islower
+
+ __________________________________________________________________________
+ __________________________________________________________________________
+
+def summa(*args):
+    return sum(args)
   
+ def show_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}") 
   
-  
-  
+ def mixed_info(*args, **kwargs):
+    print("Positional args:")
+    for arg in args:
+        print(f"- {arg}")
+
+    print("\nKeyword args:")
+    for key, value in kwargs.items():
+        print(f"- {key} = {value}")
+
+
   
   
   

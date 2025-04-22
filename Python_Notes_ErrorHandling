@@ -1,0 +1,61 @@
+🧨 Python Error Handling – Cheat Sheet
+✅ Basic Try/Except
+python
+Copy
+Edit
+try:
+    # risky code
+    x = 1 / 0
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+✅ Catching Multiple Exceptions
+python
+Copy
+Edit
+try:
+    int("abc")
+except (ValueError, TypeError):
+    print("Bad input or wrong type.")
+✅ Using Else and Finally
+python
+Copy
+Edit
+try:
+    x = int(input("Enter a number: "))
+except ValueError:
+    print("Not a valid number.")
+else:
+    print("You entered:", x)
+finally:
+    print("This always runs.")
+✅ Accessing Exception Info
+python
+Copy
+Edit
+try:
+    open("file.txt")
+except FileNotFoundError as e:
+    print("Error:", e)
+✅ Raising Your Own Errors
+python
+Copy
+Edit
+def set_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+
+set_age(-5)  # Raises ValueError
+✅ Custom Exception Classes
+python
+Copy
+Edit
+class CustomError(Exception):
+    pass
+
+def risky():
+    raise CustomError("Something went wrong!")
+
+try:
+    risky()
+except CustomError as e:
+    print("Caught:", e)

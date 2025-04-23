@@ -1,0 +1,65 @@
+#Enumerate
+
+for index, char in enumerate("asdfjalsdkf"):
+    print(index, char)
+
+
+"""
+
+#Convert to Acronym
+string_chopper = "Get to the Chopper!"
+temp = []
+string_chopper = string_chopper.upper()
+string_chopper = string_chopper.split()
+for i in string_chopper:
+    temp.append(i[0][0])
+print("".join(temp))
+
+#OR
+#for word in string_chopper:
+#   print(word[0], end="")
+#print()
+
+"""
+
+"""
+
+secret_num = 7
+num = int(input("enter number 1-10: "))
+while num != secret_num:
+
+    try:
+        print(" you didn't guess")
+        num = int(input("enter number 1-10: "))
+
+    except ValueError:
+        print("it's not a number")
+
+if num == secret_num:
+    print("you got it")
+    
+"""
+
+"""
+
+while True:
+    try:
+        number = int(input("Please enter a number: "))
+        break
+
+    except ValueError:
+        print("It is not a number.")
+    except:
+        print("what the heck happend?")
+print("thank you for entering a number!")
+
+"""
+
+"""
+
+numOfMiles = input("Enter the number of miles: ")
+numOfMiles = int(numOfMiles)
+numOfKm = numOfMiles * 8.0467
+print (numOfKm)
+
+"""

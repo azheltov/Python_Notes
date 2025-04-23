@@ -1,0 +1,21 @@
+https://www.hackerrank.com/challenges/weighted-uniform-string/problem?isFullScreen=true
+
+def wightedUniformStings(s, quieries):
+
+  res - []
+  weightSum = {}
+  weight = 0
+
+  for i in range(len(s)):
+    if i == 0 or s[i] != s[i-1]:
+      weight = ord(s[i]) - ord('a') + 1
+    else:
+      wight = weight + ord(s[i]) - ord('a') + 1
+      
+      weightSum[wight] = 1
+      
+      
+   for j in queries:
+    res.append("Yes" if j in weightSum else "No")
+    
+   return res

@@ -1,0 +1,325 @@
+comment 
+  '''
+  ...
+  
+MODULES:
+
+  import sys    (provides prewritten code)
+  print(sys.maxsize)
+  
+  import math
+  
+  import random
+  rand_num = random.randrange(1, 51)
+  
+  
+.format
+  num_1 = 1
+  num_2 = 4
+  sum1 = num_1 + num_2
+  print("{} + {} = {}".format(num_1, num_2, sum1))
+  
+miles converter
+  input()   (input method)
+  
+  miles = int(input("Enter miles "))
+  kilometers = miles * 1.60934
+  print("{} miles equals {}".format(miles, kilometers))
+  
+  
+ .split()
+  num_1, operator, num_2 = input("Enter Calculation: ").split()
+  num_1 = int(num_1)
+  num_2 = int(num_2)
+  
+  if operator == "+"
+    print("{}+{}={}".format(num_1, num_2, num_1+num_2)
+  elif operator == "-"
+    print("{}+{}={}".format(num_1, num_2, num_1-num_2)
+    
+  
+ :.2f
+ 
+ -----------------------------------
+ 
+'''Chrismas Tree Exercise'''
+
+    #
+   ###
+  #####
+ #######
+    #
+ 
+ 
+lines = 5
+spaces = 4
+hashes = 1
+base = spaces
+while lines > 1:
+    for i in range(spaces):
+        print(" ", end="")
+    for i in range(hashes):
+        print("#", end="")
+    print()
+    spaces -= 1
+    hashes += 2
+    lines -= 1
+
+for i in range(base):
+    print(" ", end="")
+print("#")
+ 
+------------------------------------------ 
+
+'''Exceptions'''
+
+while True:
+  try:
+    number = int(input("Please enter a number : "))
+    break
+   
+  except ValueError:
+    print("You didn't enter a number")
+  except:
+    print("An unknown error occurred")
+    
+ print("Thank you for entering a number")
+ 
+ ------------------------------------------------
+ 
+import random
+rand_num = random.randrange(1, 10)
+print(rand_num)
+
+while True:
+    num_1 = int(input("Pleas enter your number : "))
+
+    if num_1 == rand_num:
+        print("Bingo!")
+
+        break
+  
+  
+  ----------------------------------------------
+  
+  What happens when you use the build-in function any() on a list?
+    The any() function returns True if any item in the list evaluates to True. Otherwise, it returns False.
+    
+  What statement about static methods is true?
+    Static methods serve mostly as utility methods or helper methods, since they can't access or modify a class's state.
+  
+  What are attributes?
+    Attributes are a way to hold data or describe a state for a class or an instance of a class.
+    
+  What is the term to describe this code? 
+  count, fruit, price = (2, 'apple', 3.5)
+    tuple unpacking
+    
+   What built-in list method would you use to remove items from a list?
+    .pop() method
+    
+   What is one of the most common use of Python's sys library?
+    to capture command-line arguments given at a file's runtime
+    
+   What is the correct syntax for defining a class called Game, if it inherits from a parent class called LogicGame?
+    class Game(LogicGame): pass
+    
+   What is the correct way to write a doctest?
+    def sum(a, b):
+    """
+    >>> sum(4, 3)
+    7
+
+    >>> sum(-4, 5)
+    1
+    """
+    return a + b
+    
+  What built-in Python data type is commonly used to represent a stack?
+    list
+    
+  What would this expression return?
+  college_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']
+  return list(enumerate(college_years, 2019))
+    [(2019, 'Freshman'), (2020, 'Sophomore'), (2021, 'Junior'), (2022, 'Senior')]
+    
+  How does defaultdict work?
+    If you try to read from a defaultdict with a nonexistent key, a new default key-value pair will be created for you instead of throwing a KeyError.
+    
+  What is the purpose of the "self" keyword when defining or calling instance methods?
+    self refers to the instance whose method was called.
+    
+  Which of these is NOT a characteristic of namedtuples?
+    No import is needed to use namedtuples because they are available in the standard library.
+    
+  What is an instance method?
+    Instance methods can modify the state of an instance or the state of its parent class.
+    
+  Which statements describes the object-oriented programming concept of encapsulation?
+     It protects the data from outside interference.
+     A parent class is encapsulated and no data from the parent class passes on to the child class.
+     It keeps data and the methods that can manipulate that data in one place.
+     
+   What is the purpose of an if/else statement?
+     It executes one chunk of code if a condition is true, but a different chunk of code if the condition is false.
+     
+   What built-in Python data type is best suited for implementing a queue?
+     list
+  
+   What is the correct syntax for instantiating a new object of the type Game?
+      my_game = Game()
+      
+   What does the built-in map() function do?
+      It applies a function to each item in an iterable and returns the value of that function.
+      
+ ------------------------------------------------
+ 
+\n 
+  new line
+  
+\t
+  tabbed
+  
+\'
+  escape 
+  
+"""
+
+age = 24
+print(type(age))
+<classs 'int'>
+
+a // b 
+  integer division rounded down towards minus infinity
+
+ ------------------------------------------------
+
+Expressions?
+for i in range(1, a // b)
+  print(i)
+  
+ expression - 1
+ expression - a // b
+ expression - range(1, a // b)
+ 
+  ------------------------------------------------
+  
+Slicing
+  print(word[0:6])  
+  
+  print(word[0:6:2] 
+    extracting items from 0 to 5 
+    in steps of 2
+  
+  print(number[1::4])
+    extracting separators
+  -----------------------------------------------------  
+  ***USIFUL***
+  _____________________________________________________
+  number = "9,223, 325423;345 345,556"  
+  separators = (number[1::4])
+  print(separators)
+  values = "".join(char if char not in separators else " " for char in number).split()
+  print([int(val) for val in values])
+  -----------------------------------------------------
+  
+  [::-1] reverse string
+  
+  s = "abcdefghijklmnopqrstuvwxyz"
+  print(s[4::-1])
+  print(s[-1:17:-1])
+  """or"""
+  print(s[:-9:-1])
+  
+  
+  print(s[:1])  only the first letter
+  
+  
+  len() - length of a string
+  
+  .lstrip()   - get rid of a white space
+  .rstrip()
+  
+  .capitalize
+  .lower
+  
+DELIMITER
+
+STRING FUNCTIONS
+___________________________________________________________________________
+CONVERT STRING INTO A LIST
+____________________________________________________________________________
+                                               a_list = rand_string.split()
+  
+  
+  rand_string.count("whatever"))
+        output: number of whatever in a string
+        
+  .replace()
+  
+ __________________________________________________________________________
+ end=""  - get rid of new lines
+ __________________________________________________________________________
+  
+  .isalnum
+  .isdigit
+  .islower
+
+ __________________________________________________________________________
+ __________________________________________________________________________
+
+def summa(*args):
+    return sum(args)
+  
+ def show_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}") 
+  
+ def mixed_info(*args, **kwargs):
+    print("Positional args:")
+    for arg in args:
+        print(f"- {arg}")
+
+    print("\nKeyword args:")
+    for key, value in kwargs.items():
+        print(f"- {key} = {value}")
+
+
+  
+  
+  
+
+      
+    
+    
+    
+    
+  
+    
+    
+   
+    
+    
+    
+    
+    
+   
+    
+    
+   
+    
+  
+    
+    
+    
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  

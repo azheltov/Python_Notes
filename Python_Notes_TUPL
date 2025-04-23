@@ -1,0 +1,24 @@
+my_tuple = (1, 2, 3, 4, 5, 8)
+print("1st Value :", my_tuple[0])
+print(my_tuple[0:3]
+print(len(my_tuple)
+more_fibs = my_tuple + (13, 21, 34)
+print(34 in more_fibs)   #true?
+
+a_list = [55, 89, 144
+a_tuple = tuple(a_list)                 # convert to tuple  
+a_list = list(a_tuple)                  # convert to list
+
+print(max(a_tuple))                     # max 
+print(min(a_tuple))                     # min
+
+__________________________________________________________________________
+
+In mathematics, a tuple is a finite ordered list (sequence) of elements.
+
+__________________________________________________________________________
+
+Immutable
+
+__________________________________________________________________________
+

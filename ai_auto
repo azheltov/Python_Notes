@@ -1,0 +1,29 @@
+import openai
+
+# api key
+openai.api_key = 'api-placeholder'
+
+# auto summarization
+def summarize_text(text, model="gpt-3.5-turbo"):
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "Summarize the following text briefly."},
+            {"role": "user", "content": text}
+        ]
+    )
+    return response.choices[0].message.content.strip()
+
+
+# use case
+if __name__ == "__main__":
+    article = """
+
+    Artificial intelligence (AI) automation involves the use of AI technologies to perform tasks without human intervention.
+    AI automation can significantly increase efficiency by handling repetitive tasks, analyzing large datasets rapidly, and
+    providing intelligent insights. Python is a popular programming language for AI automation due to its simplicity, 
+    readability, and robust AI libraries such as TensorFlow, PyTorch, and OpenAI's API.
+
+    """
+    summary = summarize_text(article)
+    print("Summary:", summary)

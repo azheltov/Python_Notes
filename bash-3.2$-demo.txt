@@ -1,0 +1,18 @@
+bash-3.2$ ls
+file_translator.py    test.txt    bash-3.2$-demo.txt
+
+bash-3.2$ cat test.txt
+Hello, world! Python is awesome.
+
+bash-3.2$ python file_translator.py
+こんにちは世界！Pythonは素晴らしいです。
+
+bash-3.2$ python3 file_translator.py
+Check your file path, silly!
+
+bash-3.2$ git status
+On branch main
+nothing to commit, working tree clean
+
+bash-3.2$ echo "Done for the day!"
+Done for the day!
